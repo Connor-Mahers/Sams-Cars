@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Sams Cars</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <img src="samlogo.png" alt="Sam's Cars Logo" class="logo">
+
+    <h1>Contact Us</h1>
+
+    <p class="tagline">Book a taxi or send us a message</p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="hero">
+
+    <form class="contact-form" action="https://formspree.io/f/xkolkyqw" method="POST">
+
+      <!-- Subject line for emails -->
+      <input type="hidden" name="_subject" value="New Taxi Booking Enquiry">
+
+      <input type="text" name="name" placeholder="Your Name" required>
+
+      <input type="tel" name="phone" placeholder="Your Phone Number" required>
+
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+      <button type="submit" class="btn">Send Message</button>
+
+    </form>
+
+    <a href="index.html" class="btn" style="margin-top:20px; display:inline-block;">
+      Back to Home
+    </a>
+
+  </main>
+
+</body>
+</html>

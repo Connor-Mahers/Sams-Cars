@@ -1,0 +1,114 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Background */
+body {
+  min-height: 100vh;
+  color: #fff;
+  background-image: url("hull.jpg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+/* Dark overlay so text is readable */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: -1;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 40px 20px 20px;
+}
+
+/* Logo (this is your main fix) */
+.logo {
+  width: 20%;
+  max-width: 160px;
+  height: auto;
+  display: block;
+  margin: 0 auto 15px auto;
+}
+
+/* Title */
+.header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+/* Tagline */
+.tagline {
+  font-size: 1rem;
+  opacity: 0.85;
+  margin-bottom: 30px;
+}
+
+/* Main section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* Heading spacing */
+.hero h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+/* Paragraph spacing */
+.hero p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #ffd700;
+  color: #000;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* Button hover effect */
+.btn:hover {
+  transform: scale(1.05);
+  background: #e6c200;
+}.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  resize: none;
+}
